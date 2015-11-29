@@ -1,0 +1,96 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-image: url("sun2.jpeg");
+    background-repeat: no-repeat;
+	background-position: center;
+    background-attachment: fixed;
+	background-color: black;
+}
+
+
+
+@media only screen and (min-width: 620px) {
+
+	/* navigation sytles */
+	
+	.active {
+		background-color: deepskyblue;
+	}
+	
+	header {
+		margin: 0;
+		background-color: green;
+	}
+	p{
+		color: ghostwhite;
+	}
+	.title{
+		color: lightskyblue;
+		text-align: center;
+		padding: 30px;
+	}
+	
+	.format{
+		padding: 20px;
+		text-align: center;
+	}
+	
+	.main-nav {
+		height: 40px;
+	}
+	
+	.main-nav ul {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	overflow: auto;
+	}
+	
+	.main-nav li {
+		display: inline-block;
+		overflow: auto;
+	}
+	
+	.main-nav li:hover {
+		background-color: deepskyblue;	
+	}
+	
+	.main-nav a {
+		padding: 0 10px;
+		line-height: 40px;
+		text-decoration: none;
+		color: black;
+		display: inline;
+	}
+	
+	/* dropdown list styles */
+	
+	.dropdown {
+		position: absolute;
+		top: 40px;
+		background-color: red; 
+		display: none;	
+		overflow: auto;
+		z-index: 100;
+	}
+	
+	.dropdown li {
+		display: block;
+		text-align: left;
+	}
+	
+	.dropdown a {
+		width: 250px;
+		color: black;
+		
+	}
+	
+	li:hover > .dropdown {
+		display: block;
+		width: 250px;
+	}
+
+}
+
